@@ -18,6 +18,10 @@
     ~/.zshrc:
       path: files/zshrc
 
+    # emacs
+    ~/.emacs:
+      path: files/emacs
+
     # vim
     ~/.vimrc:
       path: files/vimrc

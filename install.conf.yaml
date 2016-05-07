@@ -22,6 +22,10 @@
     ~/.vimrc:
       path: files/vimrc
 
+    # X11
+    ~/.Xresources:
+      path: files/Xresources
+
     # ~/.config/ files
     ~/.config/fontconfig/fonts.conf:
       path: files/config/fontconfig/fonts.conf

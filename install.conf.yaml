@@ -10,6 +10,8 @@
 - link:
     ~/.gitconfig:
       path: files/gitconfig
+    ~/.hgrc:
+      path: files/hgrc
 
     # ~/.config/ files
     ~/.config/fontconfig/fonts.conf:

@@ -8,12 +8,19 @@
     - '~/.config'
 
 - link:
+    # SCMs
     ~/.gitconfig:
       path: files/gitconfig
     ~/.hgrc:
       path: files/hgrc
+
+    # Shells
     ~/.zshrc:
       path: files/zshrc
+
+    # vim
+    ~/.vimrc:
+      path: files/vimrc
 
     # ~/.config/ files
     ~/.config/fontconfig/fonts.conf:

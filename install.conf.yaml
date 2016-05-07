@@ -38,6 +38,10 @@
     ~/.Xresources:
       path: files/Xresources
 
+    # makepkg
+    ~/.makepkg.conf:
+      path: files/makepkg.conf
+
     # ~/.config/ files
     ~/.config/fontconfig/fonts.conf:
       path: files/config/fontconfig/fonts.conf

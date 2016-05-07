@@ -23,6 +23,8 @@
       path: files/emacs
 
     # vim
+    ~/.vim:
+      path: files/vim
     ~/.vimrc:
       path: files/vimrc
 

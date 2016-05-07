@@ -1,0 +1,15 @@
+[user]
+	name = Xiao-Long Chen
+	email = chenxiaolong@cxl.epac.to
+[color]
+	ui = true
+[review "review.cyanogenmod.org"]
+	username = chenxiaolong
+[push]
+	default = simple
+[url "git://anongit.kde.org/"]
+	insteadOf = kde:
+[url "ssh://git@git.kde.org/"]
+	pushInsteadOf = kde:
+[url "git@git.kde.org:"]
+	pushInsteadOf = kde:

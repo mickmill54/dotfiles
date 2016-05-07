@@ -6,3 +6,7 @@
 - clean:
     - '~'
     - '~/.config'
+
+- link:
+    ~/.gitconfig:
+      path: files/gitconfig

@@ -1,1 +1,5 @@
-source "${0:a:h}/files/shell/init.sh"
+__dotfiles=$(realpath "$(dirname "$(readlink ~/.zshrc)")")
+if [[ "${?}" -eq 0 ]]; then
+    source "${__dotfiles}/shell/init.sh"
+    unset __dotfiles
+fi

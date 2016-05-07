@@ -12,6 +12,8 @@
       path: files/gitconfig
     ~/.hgrc:
       path: files/hgrc
+    ~/.zshrc:
+      path: files/zshrc
 
     # ~/.config/ files
     ~/.config/fontconfig/fonts.conf:

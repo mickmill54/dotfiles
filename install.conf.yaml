@@ -28,6 +28,10 @@
     ~/.vimrc:
       path: files/vimrc
 
+    # tmux
+    ~/.tmux.conf:
+      path: files/tmux.conf
+
     # X11
     ~/.Xresources:
       path: files/Xresources

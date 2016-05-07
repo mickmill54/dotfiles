@@ -10,3 +10,7 @@
 - link:
     ~/.gitconfig:
       path: files/gitconfig
+
+    # ~/.config/ files
+    ~/.config/fontconfig/fonts.conf:
+      path: files/config/fontconfig/fonts.conf

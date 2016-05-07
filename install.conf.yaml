@@ -29,6 +29,8 @@
       path: files/vimrc
 
     # tmux
+    ~/.tmux:
+      path: files/tmux
     ~/.tmux.conf:
       path: files/tmux.conf
 

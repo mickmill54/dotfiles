@@ -6,8 +6,8 @@ if is_shell zsh; then
     #ZSH_THEME="agnoster"
     #ZSH_THEME="lukerandall" # 2 dirs shown, like Ubuntu
     #ZSH_THEME="nanotech" # Space saving, but no return status
-    #ZSH_THEME="wedisagree" # Single line, 1 dir, pretty icons
-    ZSH_THEME=dst # 2 line, looks nice, but long
+    ZSH_THEME="wedisagree" # Single line, 1 dir, pretty icons
+    #ZSH_THEME=dst # 2 line, looks nice, but long
     #ZSH_THEME=jnrowe # a little too long
     #ZSH_THEME=jonathan # awesome
     #ZSH_THEME=sporty_256 # awesome colors

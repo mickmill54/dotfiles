@@ -83,3 +83,6 @@
 [submodule "files/tmux/plugins/tpm"]
 	path = files/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "files/vim/bundle/PKGBUILD.vim"]
+	path = files/vim/bundle/PKGBUILD.vim
+	url = https://github.com/Firef0x/PKGBUILD.vim.git

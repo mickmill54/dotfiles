@@ -87,8 +87,9 @@ map <C-n> :NERDTreeToggle<CR>
 set t_Co=256
 
 " Color scheme
-"let base16colorspace=256
-"colorscheme base16-default
+set background=dark
+let base16colorspace=256
+colorscheme base16-default
 
 """"""""
 " Vala "

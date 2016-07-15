@@ -5,18 +5,14 @@ __config_dotfiles_dir=
 __config_script_dir=
 
 detect_shell() {
-    case $(basename -- "$(ps hp $$ | awk '{print $NF}')") in
-    -bash|bash)
-        __config_current_shell="bash"
-        ;;
-    -zsh|zsh)
+    if [[ -n "${ZSH_NAME}" ]]; then
         __config_current_shell="zsh"
-        ;;
-    *)
-        echo "Unknown shell!"
+    elif [[ -n "${BASH}" ]]; then
+        __config_current_shell="bash"
+    else
+        echo "Unknown shell!" >&2
         return 1
-        ;;
-    esac
+    fi
 }
 
 is_shell() {

@@ -1,4 +1,4 @@
 if is_shell zsh; then
-    ZSH=/stuff/git/oh-my-zsh
+    ZSH=${__config_dotfiles_dir}/submodules/oh-my-zsh
     source "${ZSH}/oh-my-zsh.sh"
 fi

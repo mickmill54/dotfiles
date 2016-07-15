@@ -1,3 +1,3 @@
 if is_shell zsh; then
-    source /stuff/git/base16-shell/base16-default.dark.sh
+    source "${__config_dotfiles_dir}/submodules/base16-shell/scripts/base16-default-dark.sh"
 fi

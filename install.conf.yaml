@@ -26,7 +26,10 @@
     ~/.vim:
       path: files/vim
     ~/.vimrc:
-      path: files/vimrc
+      path: files/vim/vimrc
+    # nvim
+    ~/.config/nvim:
+      path: files/vim
 
     # tmux
     ~/.tmux:

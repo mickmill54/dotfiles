@@ -53,6 +53,9 @@ endif
 " Basic settings "
 """"""""""""""""""
 
+" Fix backspace
+set backspace=indent,eol,start
+
 " Enable syntax highlighting
 syntax on
 

@@ -34,6 +34,21 @@ Plugin 'Firef0x/PKGBUILD.vim'
 call vundle#end()
 filetype plugin indent on
 
+""""""""""""""""
+" 24-bit color "
+""""""""""""""""
+
+if (has("nvim") && v:version <= 704)
+    " Not needed in newer versions of neovim
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+if (has("termguicolors"))
+    " https://github.com/lifepillar/vim-solarized8/issues/1
+    set t_8f=[38;2;%lu;%lu;%lum
+    set t_8b=[48;2;%lu;%lu;%lum
+    set termguicolors
+endif
+
 """"""""""""""""""
 " Basic settings "
 """"""""""""""""""

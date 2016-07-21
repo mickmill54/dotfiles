@@ -30,6 +30,8 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'kelwin/vim-smali'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Firef0x/PKGBUILD.vim'
+" Other
+Plugin 'ap/vim-css-color'
 " Required, plugins available after
 call vundle#end()
 filetype plugin indent on

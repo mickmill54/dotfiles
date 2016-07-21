@@ -95,3 +95,6 @@
 [submodule "submodules/NickTomlin-dotfiles"]
 	path = submodules/NickTomlin-dotfiles
 	url = https://github.com/NickTomlin/dotfiles.git
+[submodule "files/vim/bundle/vim-css-color"]
+	path = files/vim/bundle/vim-css-color
+	url = https://github.com/ap/vim-css-color.git

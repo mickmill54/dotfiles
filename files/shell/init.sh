@@ -38,5 +38,8 @@ for i in "${__config_script_dir}"/shell.d/*.sh; do
     source "${i}"
 done
 unset i
+
+export DOTFILES=${__config_dotfiles_dir}
+
 unset __config_dotfiles_dir
 unset __config_script_dir

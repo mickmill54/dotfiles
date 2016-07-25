@@ -14,10 +14,6 @@
     ~/.hgrc:
       path: files/hgrc
 
-    # Shells
-    ~/.zshrc:
-      path: files/zshrc
-
     # emacs
     ~/.emacs:
       path: files/emacs

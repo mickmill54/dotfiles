@@ -50,6 +50,7 @@ if is_shell zsh; then
         docker
         archlinux
         #vi-mode
+        kubectl
     )
 
     ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)

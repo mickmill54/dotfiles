@@ -8,8 +8,8 @@ if [[ -d /opt/android-sdk ]]; then
     unset __build_tools_ver
 fi
 
-if [[ -d /opt/android-ndk-r11c ]]; then
-    export ANDROID_NDK=/opt/android-ndk-r11c
+if [[ -d /opt/android-ndk ]]; then
+    export ANDROID_NDK=/opt/android-ndk
     export ANDROID_NDK_HOME="${ANDROID_NDK}"
     path_push_back "${ANDROID_NDK}"
 fi

@@ -1,6 +1,7 @@
 [user]
 	name = Andrew Gunnerson
 	email = chenxiaolong@cxl.epac.to
+	signingkey = 2233C479609BDCEC43BE9232F6A3B19090EFF32C
 [color]
 	ui = true
 [review "review.cyanogenmod.org"]

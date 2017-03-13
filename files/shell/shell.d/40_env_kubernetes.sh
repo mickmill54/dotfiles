@@ -10,7 +10,7 @@ if which kubectl &>/dev/null; then
             config=${1%%/*}
             namespace=${1#*/}
         else
-            namespace=${1}
+            config=${1}
         fi
 
         if [[ -z "${config}" ]]; then

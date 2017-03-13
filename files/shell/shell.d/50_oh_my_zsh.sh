@@ -37,7 +37,6 @@ if is_shell zsh; then
         git
         #command-not-found
         mercurial
-        systemd
         cp
         git-extras
         sudo
@@ -50,7 +49,7 @@ if is_shell zsh; then
     )
 
     if is_os Linux; then
-        plugins+=(kate)
+        plugins+=(kate systemd)
 
         if is_distro Arch; then
             plugins+=(archlinux)

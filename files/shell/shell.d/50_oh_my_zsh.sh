@@ -45,7 +45,7 @@ if is_shell zsh; then
         gitignore
         docker
         #vi-mode
-        kubectl
+        #kubectl
     )
 
     if is_os Linux; then

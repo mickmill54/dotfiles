@@ -33,25 +33,31 @@ if is_shell zsh; then
     COMPLETION_WAITING_DOTS="true"
 
     # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-    #plugins=(git command-not-found debian mercurial systemd archlinux zsh-syntax-highlighting cp git-extras)
     plugins=(
         git
-        command-not-found
+        #command-not-found
         mercurial
         systemd
         cp
         git-extras
-        yum
         sudo
         gradle
-        kate
         python
         gitignore
         docker
-        archlinux
         #vi-mode
         kubectl
     )
+
+    if is_os Linux; then
+        plugins+=(kate)
+
+        if is_distro Arch; then
+            plugins+=(archlinux)
+        elif is_distro Fedora; then
+            plugins+=(yum)
+        fi
+    fi
 
     ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 fi

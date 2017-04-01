@@ -2,39 +2,38 @@
 set nocompatible
 " Disable filetype plugin
 filetype off
-" Add vundle to the runtime path
-set rtp+=~/.vim/bundle/Vundle.vim
-" Initialize vundle
-call vundle#begin()
-" Let Vundle manage itself
-Plugin 'gmarik/Vundle.vim'
+
+"set rtp+=~/.vim/vim-plug
+source ~/.vim/vim-plug/plug.vim
+
+call plug#begin('~/.vim/plugged')
 " Plugins
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'bling/vim-bufferline'
-Plugin 'wycats/nerdtree'
-Plugin 'ervandew/supertab'
-"Plugin 'majutsushi/tagbar'
-Plugin 'airblade/vim-gitgutter'
-"Plugin 'scrooloose/syntastic'
-Plugin 'w0rp/ale'
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-bufferline'
+Plug 'wycats/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'ervandew/supertab'
+"Plug 'majutsushi/tagbar'
+Plug 'airblade/vim-gitgutter'
+"Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
+Plug 'christoomey/vim-tmux-navigator'
 " Color schemes
-Plugin 'junegunn/seoul256.vim'
-Plugin 'w0ng/vim-hybrid'
-Plugin 'zeis/vim-kolor'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'morhetz/gruvbox'
-Plugin 'chriskempson/base16-vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'w0ng/vim-hybrid'
+Plug 'zeis/vim-kolor'
+Plug 'nanotech/jellybeans.vim'
+Plug 'morhetz/gruvbox'
+Plug 'chriskempson/base16-vim'
 " Syntax highlighting
-Plugin 'kelwin/vim-smali'
-Plugin 'tmux-plugins/vim-tmux'
-Plugin 'Firef0x/PKGBUILD.vim'
+Plug 'kelwin/vim-smali'
+Plug 'tmux-plugins/vim-tmux'
+Plug 'Firef0x/PKGBUILD.vim'
 " Other
-Plugin 'ap/vim-css-color'
-" Required, plugins available after
-call vundle#end()
+Plug 'ap/vim-css-color'
+call plug#end()
+
 filetype plugin indent on
 
 """"""""""""""""

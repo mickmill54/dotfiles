@@ -98,3 +98,6 @@
 [submodule "files/vim/bundle/vim-css-color"]
 	path = files/vim/bundle/vim-css-color
 	url = https://github.com/ap/vim-css-color.git
+[submodule "files/vim/bundle/ale"]
+	path = files/vim/bundle/ale
+	url = https://github.com/w0rp/ale.git

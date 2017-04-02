@@ -3,7 +3,6 @@ set nocompatible
 " Disable filetype plugin
 filetype off
 
-"set rtp+=~/.vim/vim-plug
 source ~/.vim/vim-plug/plug.vim
 
 call plug#begin('~/.vim/plugged')
@@ -19,6 +18,9 @@ Plug 'airblade/vim-gitgutter'
 "Plug 'scrooloose/syntastic'
 Plug 'w0rp/ale'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'Valloric/YouCompleteMe'
 " Color schemes
 Plug 'junegunn/seoul256.vim'
 Plug 'w0ng/vim-hybrid'

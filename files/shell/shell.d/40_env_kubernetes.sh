@@ -31,7 +31,7 @@ EOF
     function kns() {
         local config=
         local namespace=
-        local configfile=
+        local kubeconfig=
 
         if [[ "${1}" == -* ]]; then
             kns_usage >&2
@@ -46,9 +46,14 @@ EOF
         fi
 
         if [[ -z "${config}" ]]; then
-            configfile=config
+            kubeconfig=${HOME}/.kube/config
         else
-            configfile=config.${config}
+            kubeconfig=${HOME}/.kube/config.${config}
+        fi
+
+        if [[ ! -f "${kubeconfig}" ]]; then
+            echo "${kubeconfig} does not exist" >&1
+            return 1
         fi
 
         if [[ -z "${namespace}" ]]; then
@@ -56,6 +61,6 @@ EOF
         fi
 
         shift
-        kubectl --kubeconfig="${HOME}/.kube/${configfile}" --namespace="${namespace}" "${@}"
+        kubectl --kubeconfig="${kubeconfig}" --namespace="${namespace}" "${@}"
     }
 fi

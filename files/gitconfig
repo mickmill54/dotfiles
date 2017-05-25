@@ -1,18 +1,33 @@
 [user]
-	name = Andrew Gunnerson
-	email = chenxiaolong@cxl.epac.to
-	signingkey = 2233C479609BDCEC43BE9232F6A3B19090EFF32C
-[color]
-	ui = true
-[review "review.cyanogenmod.org"]
-	username = chenxiaolong
+	name = Mick Miller
+	email = mick@mickmill.com
+[core]
+	autocrlf = input
+	excludesfile = /Users/mick.miller/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+    graph1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative --color --date-order
+    graph2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''        %C(bold white)— %an%C(reset)%n%w(70,12,10)%C(white)%s%C(reset)%n' --abbrev-commit --color --date-order
+    graph = !"git graph1"
+    ls = log --oneline
+    caa = commit -a --amend -C HEAD
+    
 [push]
 	default = simple
-[url "git://anongit.kde.org/"]
-	insteadOf = kde:
-[url "ssh://git@git.kde.org/"]
-	pushInsteadOf = kde:
-[url "git@git.kde.org:"]
-	pushInsteadOf = kde:
-[gpg]
-	program = gpg2
+[credential]
+	helper = osxkeychain
+
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = true
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f
+

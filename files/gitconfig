@@ -1,9 +1,9 @@
 [user]
 	name = Mick Miller
-	email = mick@mickmill.com
+	email = mick_miller@keybank.com
 [core]
 	autocrlf = input
-	excludesfile = /Users/mick.miller/.gitignore_global
+	excludesfile = /Users/millemv/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

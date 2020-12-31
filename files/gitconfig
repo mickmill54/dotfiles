@@ -1,9 +1,10 @@
 [user]
 	name = Mick Miller
-	email = mick_miller@keybank.com
+	email = mick@mickmill.com
 [core]
 	autocrlf = input
 	excludesfile = /Users/millemv/.gitignore_global
+	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

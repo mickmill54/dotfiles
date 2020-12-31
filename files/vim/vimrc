@@ -92,7 +92,7 @@ let g:airline_powerline_fonts = 1
 "let g:airline#extensions#tabline#enabled = 1
 
 " https://github.com/airblade/vim-gitgutter/issues/287
-autocmd VimEnter * :AirlineRefresh
+" autocmd VimEnter * :AirlineRefresh
 
 """"""""""""
 " nerdtree "
@@ -111,7 +111,7 @@ set t_Co=256
 " Color scheme
 set background=dark
 let base16colorspace=256
-colorscheme base16-tomorrow-night
+" colorscheme base16-tomorrow-night
 
 """"""""
 " Vala "

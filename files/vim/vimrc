@@ -122,7 +122,6 @@ set background=dark
 colorscheme solarized
 let base16colorspace=256
 " colorscheme base16-tomorrow-night
-=======
 
 """"""""
 " Vala "
